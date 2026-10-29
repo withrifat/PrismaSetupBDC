@@ -1,0 +1,6 @@
+node_modules
+# Keep environment variables out of version control
+.env
+
+/src/generated/prisma
+mongodb+srv://admin:t1Yn8xnDa57LtdBk@withrifat.xit2u0l.mongodb.net/mydb
