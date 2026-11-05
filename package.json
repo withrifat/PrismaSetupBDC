@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon src/server.js",
@@ -11,7 +12,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module",
   "dependencies": {
     "@prisma/client": "^6.19.3",
     "dotenv": "^18.0.9",
@@ -20,5 +20,10 @@
   "devDependencies": {
     "nodemon": "^3.1.14",
     "prisma": "^6.19.3"
+  },
+  "allowScripts": {
+    "@prisma/client@6.19.3": true,
+    "@prisma/engines@6.19.3": true,
+    "prisma@6.19.3": true
   }
 }
