@@ -2,6 +2,7 @@
 import "dotenv/config";
 import express from "express";
 import { PrismaClient } from "@prisma/client";
+import studentRoutes from "./routes/prisma-query.js";
 
 const app = express();
 const prisma = new PrismaClient();
@@ -9,6 +10,9 @@ const prisma = new PrismaClient();
 app.use(express.json());
 
 // 1. Check server and database connection
+app.use("/api", studentRoutes);
+
+
 app.get("/", async (req, res) => {
   try {
     await prisma.$connect();
