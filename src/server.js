@@ -5,7 +5,7 @@ import { PrismaClient } from "@prisma/client";
 
 import studentRoutes from "./routes/prisma-query.js";
 
-
+fsdafdfsdadf
 const app = express();
 const prisma = new PrismaClient();
 
